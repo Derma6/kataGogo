@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body {
+    overflow: hidden;
+}
+section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
+    width: 100%;
+}
+div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 8em;
+    width: 80%;
+    padding-top: 2em;
+}
+div:nth-child(1) p {
+    font-size: 1.4em;
+}
+div:nth-child(1) h1 {
+    cursor: pointer;
+}
+div:nth-child(1) h2 {
+    font-size: 3em;
+}
+span {
+    color: red;
+}
+div:nth-child(2) ul{
+    list-style-type: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+    z-index: 10;
+    position: relative;
+
+}
+div:nth-child(2) li{
+    margin: 0 1em;
+    cursor: pointer;
+}
+div:nth-child(2) {
+    width: 100%;
+}
+img {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    /*MERCI GUIGUI POUR LE POSITIONNEMENT !*/
+}
+svg {
+    width: 1em;
+    animation: arrow 1s infinite;
+}
+
+@keyframes arrow {
+    from {
+      margin-bottom: 0;
+    }
+  
+    to {    
+        margin-bottom: 2em;
+    }
+  }
